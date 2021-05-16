@@ -41,7 +41,7 @@ $taxonomies = wp_list_filter(
 				$list             = get_the_term_list( $post->ID, $taxonomy->name, '', esc_html( $separator ), '' );
 				$placeholder_text = sprintf(
 					/* translators: %s: taxonomy name */
-					__( '%s:', 'wp-rig' ),
+					__( '%s: %%s', 'wp-rig' ),
 					$taxonomy->labels->name // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				);
 		}
